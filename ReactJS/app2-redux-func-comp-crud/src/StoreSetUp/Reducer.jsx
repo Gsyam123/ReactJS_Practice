@@ -19,11 +19,16 @@ const initialState = {
   employees: [],
 };
 
-export const myReducer = (state=initialState,action) => {
-   switch (action.type) {
-   
-   
+export const myReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case "DEL_PERSON":
+      return {
+        persons: [
+          ...state.persons.filter((pe) => pe.email !== action.payload.email),
+        ],
+      };
+
     default:
-     return state
-   }
-}
+      return state;
+  }
+};

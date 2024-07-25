@@ -1,13 +1,18 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { deletePersonAction } from "../StoreSetUp/Action";
 
 export const Person = () => {
   const myPersons = useSelector((state) => {
     return state.persons;
   });
 
-  // console.log(myPersons);
+  const dispatch = useDispatch();
 
+  // console.log(myPersons);
+  const deletePerson = (per) => {
+    dispatch(deletePersonAction(per));
+  };
   return (
     <div>
       <table border={2}>
@@ -31,7 +36,13 @@ export const Person = () => {
                   <button>Edit</button>
                 </td>
                 <td>
-                  <button>Delete</button>
+                  <button
+                    onClick={() => {
+                      deletePerson(per);
+                    }}
+                  >
+                    Delete
+                  </button>
                 </td>
               </tr>
             );
