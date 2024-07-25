@@ -6,7 +6,7 @@ export const Person = () => {
     return state.persons;
   });
 
-  console.log(myPersons);
+  // console.log(myPersons);
 
   return (
     <div>
