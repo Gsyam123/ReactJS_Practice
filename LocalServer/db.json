@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "uName": "naveen",
+      "uEmail": "naveen@gmail.com",
+      "uMobile": 8888888888
+    },
+    {
+      "id": 2,
+      "uName": "Syam Kumar",
+      "uEmail": "syam@gmail.com",
+      "uMobile": 111122
+    },
+    {
+      "id": 3,
+      "uName": "syamkumar",
+      "uEmail": "syamkumar@gmail.commmm",
+      "uMobile": 888111
+    },
+    {
+      "uName": "ss",
+      "uEmail": "ss@gmail.com",
+      "uMobile": "33333",
+      "id": 4
+    }
+  ]
+}
