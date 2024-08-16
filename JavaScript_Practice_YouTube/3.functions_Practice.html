@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function washingMachine(clothType, water) {
+            if (clothType === "shirt") {
+                console.log("It will run 30 mins...")
+            } else if (clothType === "towel") {
+                console.log("It will run 50 mins...")
+            } else {
+                console.log("Not Found.....")
+            }
+            return "cleaning completed..." + clothType
+        }
+
+        // let washedShirts = washingMachine("shirt", "cold")
+        let washedTowels = washingMachine("towel", "hot")
+
+        // console.log(washedShirts)
+        console.log(washedTowels)
+    </script>
+</body>
+
+</html>
